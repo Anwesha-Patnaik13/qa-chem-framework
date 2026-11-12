@@ -40,6 +40,8 @@ After each run, results are saved to `reports/test_report.csv` and `reports/test
 
 All 19 tests pass on the correct code.
 
+Code coverage: 100% (measured with pytest-cov).
+
 ## Mutation testing results
 
 I deliberately introduced bugs into the calculator, one at a time, and checked whether the test suite detected them. After each run the original code was restored.

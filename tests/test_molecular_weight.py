@@ -39,3 +39,11 @@ def test_negative_weight_is_rejected(monkeypatch):
 # ---- Result is always positive ----
 def test_weight_is_positive():
     assert molecular_weight("H2O") > 0
+
+    
+
+# ---- Zero count inside a longer formula must be rejected ----
+@pytest.mark.parametrize("bad_formula", ["H0O", "C0H4"])
+def test_zero_count_inside_formula_is_rejected(bad_formula):
+    with pytest.raises(ValueError, match="Invalid count"):
+        molecular_weight(bad_formula)
