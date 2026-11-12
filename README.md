@@ -1,5 +1,7 @@
 # QA Testing Framework for a Molecular Weight Calculator
 
+![Tests](https://github.com/Anwesha-Patnaik13/qa-chem-framework/actions/workflows/tests.yml/badge.svg)
+
 An automated test suite for a small scientific program that calculates molecular weights from chemical formulas (for example, H2O gives about 18.015 g/mol). The project demonstrates test design, scientific validation, error handling, regression testing, automated reporting and mutation testing.
 
 ## What is tested
