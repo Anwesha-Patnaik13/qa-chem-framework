@@ -14,4 +14,4 @@ I deliberately introduced bugs into the calculator, one at a time, and checked w
 | Zero counts accepted (H0) | 0 | No (test gap found) |
 | Zero counts accepted, after adding H0O and C0H4 tests | 2 | Yes |
 
-The zero-count bug was not caught by the original tests. The `H0` test still passed because a second check (total weight must be positive) rejected it anyway. A formula like `H0O` would slip through, because the total weight stays positive. This is a gap in test coverage found through mutation testing.Adding tests for H0O and C0H4 closed the gap.
+The zero-count bug was not caught by the original tests. The `H0` test still passed because a second check (total weight must be positive) rejected it anyway. A formula like `H0O` would slip through, because the total weight stays positive. This is a gap in test coverage found through mutation testing. Adding tests for H0O and C0H4 closed the gap.
